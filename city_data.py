@@ -1,14 +1,14 @@
 # city_data.py
 # A class for storing a city's population data
 # Starter Code from CSC 210
-# Modified by: [Your Name]
-
+# Modified by: [hector]
 class CityData:
-    # YOUR CODE HERE
-    # Reverse engineer what is expected here
-    # based on main.py, and tests.py
-    # a couple methods/properties are already done for you;
-    # don't forget to make your constructor and to;
+    
+       def __init__(self, name, start_year, data):
+        self._name = name
+        self._start_year = start_year
+        self._data = data
+        self._end_year = start_year + len(data) - 1
 
     @property
     def name(self):
